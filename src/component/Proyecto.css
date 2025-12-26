@@ -54,17 +54,21 @@
 }
 
 /* ===== IMAGEN + OVERLAY ===== */
+/* ===== IMAGEN + OVERLAY ===== */
 .contenedor-imagen {
   position: relative;
   overflow: hidden;
+  width: 100%;
 }
 
 .imagen-proyecto {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
+  width: 100%;        /* Ocupa todo el ancho del contenedor */
+  height: auto;       /* Mantiene proporción natural */
+  max-height: 250px;  /* Limita altura máxima */
+  object-fit: cover;  /* Cubre el contenedor sin deformarse */
   display: block;
 }
+
 
 /* Overlay hover */
 .overlay {

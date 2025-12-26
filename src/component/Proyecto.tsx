@@ -3,7 +3,8 @@ import "./Proyecto.css";
 
 import woliseaImg from "../assets/1Wolisea.png";
 import portafolioImg from "../assets/Portafolio.png";
-
+import ecotapImg from "../assets/Ecotap.png";
+import maquinaExpendedoraImg from "../assets/MaquinaExpendora.jpg";
 
 import { FaGithub, FaYoutube } from "react-icons/fa";
 
@@ -25,8 +26,25 @@ const proyectos = [
     imagen: woliseaImg,
     github: "https://github.com/abelVee/1Wolisea",
     youtube: "https://youtu.be/6pdjY0aFY8k?si=q_nvkGPD3aOmKdVH",
+  },
+  {
+    titulo: "Ecotap",
+    descripcion:
+      "Ecotap es una aplicación móvil desarrollada en equipo que aborda la problemática de los residuos sólidos promoviendo la economía circular. Fue un proyecto ganador que obtuvo el pase a la etapa nacional del Hackatón Guadalajara.",
+    tecnologias: ["SwiftUI", "Figma", "Xcode","Swift"],
+    imagen: ecotapImg,
+    github: "https://github.com/abelVee/EcoTap",
+    youtube: "https://youtube.com/shorts/6rR-y1w7mhI?si=2HbfxZCDfLnoBu-Q",
+  },
+  {
+    titulo: "Expendedora de útiles escolares",
+    descripcion:
+      "Se creo una máquina expendedora de útiles escolares desarrollada en equipo para la Semana de la Ciencia. Combina hardware y software: la interfaz en Java permite la interacción con el usuario y la computadora, mientras que el Arduino controla los movimientos de la máquina mediante programación en C, creando un sistema autómata totalmente funcional.",
+    tecnologias: ["Java", "Arduino", "C"],
+    imagen: maquinaExpendedoraImg,
+    github: "#",
+    youtube: "https://youtube.com/shorts/U3YXg81pjgY?si=1aDP95Wpo2sTJctr",
   }
-
 ];
 
 const Proyecto = () => {
@@ -56,23 +74,27 @@ const Proyecto = () => {
 
               {/* Overlay */}
               <div className="overlay">
-                <a
-                  href={proyecto.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Repositorio GitHub"
-                >
-                  <FaGithub />
-                </a>
+                {proyecto.github && proyecto.github !== "#" && (
+                  <a
+                    href={proyecto.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Repositorio GitHub"
+                  >
+                    <FaGithub />
+                  </a>
+                )}
 
-                <a
-                  href={proyecto.youtube}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Video en YouTube"
-                >
-                  <FaYoutube />
-                </a>
+                {proyecto.youtube && proyecto.youtube !== "#" && (
+                  <a
+                    href={proyecto.youtube}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Video en YouTube"
+                  >
+                    <FaYoutube />
+                  </a>
+                )}
               </div>
             </div>
 
