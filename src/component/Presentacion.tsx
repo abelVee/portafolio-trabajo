@@ -33,7 +33,7 @@ const Presentacion = () => {
 {/* Redes sociales */}
 <div className="redes">
   <a
-    href="https://github.com/tuusuario"
+    href="https://github.com/abelVee"
     target="_blank"
     rel="noopener noreferrer"
     aria-label="GitHub"
@@ -42,7 +42,7 @@ const Presentacion = () => {
   </a>
 
   <a
-    href="https://linkedin.com/in/tuusuario"
+    href="https://linkedin.com/in/abel cameras"
     target="_blank"
     rel="noopener noreferrer"
     aria-label="LinkedIn"
@@ -50,11 +50,11 @@ const Presentacion = () => {
     <FaLinkedin />
   </a>
 
-  <a href="mailto:correo@gmail.com" aria-label="Gmail">
+  <a href="mailto:camerasabel56@gmail.com" aria-label="Gmail">
     <FaEnvelope />
   </a>
 
-  <a href="tel:+521000000000" aria-label="Teléfono">
+  <a href="tel:+529625114933" aria-label="Teléfono">
     <FaPhoneAlt />
   </a>
 </div>
