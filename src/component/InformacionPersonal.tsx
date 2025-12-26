@@ -26,12 +26,12 @@ const InformacionPersonal = () => {
       {/* Estadísticas */}
       <div className="estadisticas">
         <div className="card-estadistica">
-          <span className="numero">2+</span>
+          <span className="numero">1</span>
           <p>Años de servicio</p>
         </div>
 
         <div className="card-estadistica">
-          <span className="numero">10+</span>
+          <span className="numero">2+</span>
           <p>Proyectos</p>
         </div>
 

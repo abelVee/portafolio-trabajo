@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin, FaEnvelope, FaPhoneAlt } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaEnvelope,  FaInstagram  } from "react-icons/fa";
 import "./Presentacion.css";
 import Perfil from "../assets/Perfil.jpg";
 
@@ -30,7 +30,6 @@ const Presentacion = () => {
         </a>
       </div>
 
-{/* Redes sociales */}
 <div className="redes">
   <a
     href="https://github.com/abelVee"
@@ -42,7 +41,7 @@ const Presentacion = () => {
   </a>
 
   <a
-    href="https://linkedin.com/in/abel cameras"
+    href="https://linkedin.com/in/abelcameras"
     target="_blank"
     rel="noopener noreferrer"
     aria-label="LinkedIn"
@@ -50,14 +49,22 @@ const Presentacion = () => {
     <FaLinkedin />
   </a>
 
+  <a
+    href="https://instagram.com/tu_usuario"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Instagram"
+  >
+    <FaInstagram />
+  </a>
+
   <a href="mailto:camerasabel56@gmail.com" aria-label="Gmail">
     <FaEnvelope />
   </a>
 
-  <a href="tel:+529625114933" aria-label="Teléfono">
-    <FaPhoneAlt />
-  </a>
+
 </div>
+
 
     </section>
   );

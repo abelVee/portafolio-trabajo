@@ -6,7 +6,8 @@ const Capacidades: React.FC = () => {
   const frontend: Skill[] = [
     ["HTML / CSS", 80],
     ["JavaScript", 45],
-    ["React", 65],
+    ["React", 55],
+    ["TypeScript", 55],
     ["Next.js", 35],
   ];
 
@@ -110,6 +111,8 @@ const Capacidades: React.FC = () => {
         <span>ClickUp</span>
         <span>Apache NetBeans</span>
         <span>Dia Diagram</span>
+        <span>Netlify</span>
+        <span>Inkscape</span>
       </div>
     </section>
   );

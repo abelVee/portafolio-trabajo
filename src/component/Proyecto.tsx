@@ -1,50 +1,32 @@
 import { useState } from "react";
 import "./Proyecto.css";
-import proyectoImg from "../assets/1Wolisea.png";
-import { FaGithub, FaYoutube } from "react-icons/fa";
 
+import woliseaImg from "../assets/1Wolisea.png";
+import portafolioImg from "../assets/Portafolio.png";
+
+
+import { FaGithub, FaYoutube } from "react-icons/fa";
 
 const proyectos = [
   {
     titulo: "Portafolio Personal",
     descripcion:
       "Portafolio web para mostrar perfil profesional, habilidades y proyectos.",
-    tecnologias: ["HTML", "CSS", "JavaScript", "React"],
-    github: "#",
-    youtube: "#",
+    tecnologias: ["HTML", "CSS", "TypeScript", "React"],
+    imagen: portafolioImg,
+    github: "https://github.com/abelVee/portafolio-trabajo",
+    youtube: "https://youtu.be/UMvnv0MMXT0?si=j6K_qmBj3MGzj1xu",
   },
   {
-    titulo: "Sistema Web",
+    titulo: "1Wolisea",
     descripcion:
-      "Aplicación web para gestión de información con enfoque en usabilidad.",
-    tecnologias: ["Java", "SQL", "HTML", "CSS"],
-    github: "#",
-    youtube: "#",
-  },
-  {
-    titulo: "App Educativa",
-    descripcion:
-      "Proyecto enfocado en el aprendizaje interactivo.",
-    tecnologias: ["React", "JavaScript", "CSS"],
-    github: "#",
-    youtube: "#",
-  },
-  {
-    titulo: "API REST",
-    descripcion:
-      "Servicios REST para consumo de datos de forma escalable.",
-    tecnologias: ["Node.js", "SQL", "REST API"],
-    github: "#",
-    youtube: "#",
-  },
-  {
-    titulo: "Proyecto Extra",
-    descripcion:
-      "Este proyecto se muestra solo al presionar ver más.",
-    tecnologias: ["React", "Firebase"],
-    github: "#",
-    youtube: "#",
-  },
+      "1Wolisea es un juego educativo para iPad, participante en el Student Channel 2025, que promueve la conciencia ambiental en niños.",
+    tecnologias: ["SwiftUI", "Playground", "Inkscape", "Xcode"],
+    imagen: woliseaImg,
+    github: "https://github.com/abelVee/1Wolisea",
+    youtube: "https://youtu.be/6pdjY0aFY8k?si=q_nvkGPD3aOmKdVH",
+  }
+
 ];
 
 const Proyecto = () => {
@@ -64,35 +46,34 @@ const Proyecto = () => {
       <div className="contenedor-proyectos">
         {proyectosVisibles.map((proyecto, index) => (
           <div className="tarjeta-proyecto" key={index}>
-            
-            {/* Imagen con hover */}
+            {/* Imagen */}
             <div className="contenedor-imagen">
               <img
-                src={proyectoImg}
+                src={proyecto.imagen}
                 alt={proyecto.titulo}
                 className="imagen-proyecto"
               />
 
-       <div className="overlay">
-  <a
-    href={proyecto.github}
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="Repositorio GitHub"
-  >
-    <FaGithub />
-  </a>
+              {/* Overlay */}
+              <div className="overlay">
+                <a
+                  href={proyecto.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Repositorio GitHub"
+                >
+                  <FaGithub />
+                </a>
 
-  <a
-    href={proyecto.youtube}
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="Video en YouTube"
-  >
-    <FaYoutube />
-  </a>
-</div>
-
+                <a
+                  href={proyecto.youtube}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Video en YouTube"
+                >
+                  <FaYoutube />
+                </a>
+              </div>
             </div>
 
             <div className="header-proyecto">
@@ -100,9 +81,7 @@ const Proyecto = () => {
               <h4>{proyecto.titulo}</h4>
             </div>
 
-            <p className="descripcion-proyecto">
-              {proyecto.descripcion}
-            </p>
+            <p className="descripcion-proyecto">{proyecto.descripcion}</p>
 
             <div className="tecnologias">
               {proyecto.tecnologias.map((tec, i) => (

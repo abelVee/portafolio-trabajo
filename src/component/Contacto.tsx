@@ -5,9 +5,10 @@ import {
   FaMapMarkerAlt,
   FaGithub,
   FaLinkedin,
-  FaGoogle,
   FaHeart,
+  FaInstagram,
 } from "react-icons/fa";
+
 
 const Contacto = () => {
   return (
@@ -100,11 +101,39 @@ const Contacto = () => {
           <FaHeart className="corazon" /> {new Date().getFullYear()}
         </div>
 
-        <div className="footer-centro">
-          <FaGithub />
-          <FaLinkedin />
-          <FaGoogle />
-        </div>
+       <div className="footer-centro">
+  <a
+    href="https://github.com/abelVee"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="GitHub"
+  >
+    <FaGithub />
+  </a>
+
+  <a
+    href="https://linkedin.com/in/abelcameras"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="LinkedIn"
+  >
+    <FaLinkedin />
+  </a>
+
+  <a
+    href="https://instagram.com/tu_usuario"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Instagram"
+  >
+    <FaInstagram />
+  </a>
+
+  <a href="mailto:camerasabel56@gmail.com" aria-label="Gmail">
+    <FaEnvelope />
+  </a>
+</div>
+
 
         <div className="footer-der">
           Todos los derechos reservados
