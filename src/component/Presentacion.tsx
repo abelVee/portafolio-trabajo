@@ -13,7 +13,7 @@ const Presentacion = () => {
 
       {/* Texto */}
       <h2 className="rol">Desarrollador Junior</h2>
-      <h1 className="saludo">Hola, soy Desarrollador</h1>
+      <h1 className="saludo">Hola, soy Desarrollador Full Stack</h1>
 
       <p className="descripcion">
         Soy estudiante de 8vo semestre, apasionado por el desarrollo web
