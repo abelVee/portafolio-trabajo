@@ -1,0 +1,109 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Variables globales */
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  color: #213547;
+  background-color: #ffffff;
+}
+
+/* Body normal (layout libre) */
+body {
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+/* Enlaces */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Botones */
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;   /* 👈 uno debajo del otro */
+  margin-left: 40px;        /* 👈 más a la derecha */
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 64px;
+  background-color: #222;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* texto izquierda, iconos derecha */
+
+  padding: 0 24px;
+  z-index: 1000;
+}
+
+/* Texto */
+.text-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  margin: 0;
+  font-size: 18px;
+  position: relative;
+}
+
+.title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 2px;
+  background-color: #00bcd4;
+}
+
+.subtitle {
+  margin: 0;
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+/* Contacto */
+.header-contacto {
+  display: flex;
+  flex-direction: column;     /* 👈 texto arriba, iconos abajo */
+  align-items: center;        /* centra horizontalmente */
+  gap: 8px;
+}
+
+/* Contenedor solo para iconos */
+.header-contacto-icons {
+  display: flex;
+  gap: 18px;
+  font-size: 20px;
+}
+
+.contacto-texto {
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  opacity: 0.9;
+}
+
+
+
+

@@ -1,0 +1,142 @@
+.formacion {
+  padding: 80px 20px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+/* Títulos */
+.titulo-formacion {
+  font-size: 2.2rem;
+  color: #0f172a;
+  margin-bottom: 10px;
+}
+
+.subtitulo-formacion {
+  font-size: 1.3rem;
+  color: #0f172a;
+  margin-bottom: 50px;
+  position: relative;
+  display: inline-block;
+}
+
+.linea-azul {
+  display: block;
+  width: 70px;
+  height: 4px;
+  background-color: #38bdf8;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* Bloque principal */
+.bloque-formacion {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+/* Header reutilizable */
+.bloque-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: #f1f5f9;
+  padding: 15px 20px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+
+.icono-educacion {
+  font-size: 1.8rem;
+  color: #38bdf8;
+}
+
+/* Variante reconocimiento */
+.bloque-header.reconocimiento {
+  background-color: #fef9c3;
+}
+
+.icono-reconocimiento {
+  font-size: 1.8rem;
+  color: #ca8a04;
+}
+
+/* Tarjeta */
+.tarjeta-formacion {
+  background-color: #f8fafc;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Fecha */
+.fecha {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #475569;
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+}
+
+/* Textos */
+.carrera {
+  font-size: 1.3rem;
+  color: #0f172a;
+  margin-bottom: 5px;
+}
+
+.universidad {
+  font-weight: 600;
+  color: #334155;
+}
+
+.semestre {
+  color: #64748b;
+  margin-bottom: 15px;
+}
+
+.descripcion-formacion {
+  color: #475569;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+/* Evidencia */
+.evidencia {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* PDF */
+.btn-pdf {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #ef4444;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  width: fit-content;
+}
+
+.btn-pdf:hover {
+  background-color: #dc2626;
+}
+
+/* Imagen */
+.imagen-reconocimiento img {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.titulo-reconocimiento {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  color: #475569;
+}

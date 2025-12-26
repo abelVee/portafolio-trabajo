@@ -1,0 +1,99 @@
+.presentacion {
+  min-height: 100vh;
+  background-color: #0f172a; /* Azul oscuro */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+   padding: 120px 20px 40px;
+}
+
+/* Foto */
+.foto-container {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid #38bdf8; /* Azul claro */
+  margin-bottom: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+.foto-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Texto */
+.rol {
+  font-size: 1.5rem;
+  color: #38bdf8;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.saludo {
+  font-size: 2.8rem;
+  color: #f8fafc;
+  margin-bottom: 12px;
+}
+
+.descripcion {
+  max-width: 520px;
+  font-size: 1rem;
+  color: #cbd5f5;
+  margin-bottom: 28px;
+  line-height: 1.6;
+}
+
+/* Botones */
+.botones {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  padding: 12px 24px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn.principal {
+  background-color: #38bdf8;
+  color: #0f172a;
+}
+
+.btn.secundario {
+  border: 2px solid #38bdf8;
+  color: #38bdf8;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(56, 189, 248, 0.3);
+}
+
+/* Redes sociales */
+.redes {
+  display: flex;
+  gap: 22px;
+}
+
+.redes a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: #cbd5f5;
+  transition: color 0.3s ease;
+}
+
+.redes a:hover {
+  color: #38bdf8;
+}
