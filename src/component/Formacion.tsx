@@ -3,9 +3,14 @@ import {
   FaGraduationCap,
   FaCalendarAlt,
   FaLightbulb,
-  FaFilePdf,
 } from "react-icons/fa";
-import Perfil from "../assets/Perfil.jpg";
+
+import hackatonImg from "../assets/Hackton.jpg";
+import constanciaHImg from "../assets/ConstanciaHackton.jpg";
+import constanciaSoconuscoImg from "../assets/ConstanciaSoconusco.jpg";
+import constanciaConocimientoiImg from "../assets/ConstanciaConocimiento.jpg";
+import maquinaExpendedoraImg from "../assets/MaquinaExpendora.jpg";
+import soconuscoImag from "../assets/Soconusco.jpg";
 
 const Formacion = () => {
   return (
@@ -31,9 +36,7 @@ const Formacion = () => {
             <span>Presente · 2021</span>
           </div>
 
-          <h5 className="carrera">
-            Ingeniería en Sistemas Computacionales
-          </h5>
+          <h5 className="carrera">Ingeniería en Sistemas Computacionales</h5>
 
           <p className="universidad">Universidad Tecnológica</p>
 
@@ -42,6 +45,11 @@ const Formacion = () => {
           <p className="descripcion-formacion">
             Formación enfocada en desarrollo de software, bases de datos,
             programación web y buenas prácticas de ingeniería.
+          </p>
+
+          {/* NIVEL DE INGLÉS */}
+          <p className="idioma">
+            <strong>Inglés:</strong> Nivel Intermedio (B1) – Facultad de Lenguas, UNACH
           </p>
         </div>
 
@@ -53,21 +61,69 @@ const Formacion = () => {
 
         <div className="tarjeta-formacion">
           <div className="evidencia">
-            <a
-              href="/docs/reconocimiento.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-pdf"
-            >
-              <FaFilePdf />
-              Ver diploma (PDF)
-            </a>
+            {/* Hackatón */}
+            <div className="fila-reconocimientos">
+              <div className="imagen-reconocimiento">
+                <img src={hackatonImg} alt="Reconocimiento hackatón 2025" />
+                <p className="titulo-reconocimiento">
+                  Ganador del <strong>Primer Lugar</strong> en el Hackatón 2025 local.
+                  <br />
+                  Clasificación al Nacional en Guadalajara.
+                </p>
+              </div>
 
-            <div className="imagen-reconocimiento">
-              <img src={Perfil} alt="Reconocimiento académico" />
-              <p className="titulo-reconocimiento">
-                Reconocimiento por buena calificación · 2022
-              </p>
+              <div className="imagen-reconocimiento">
+                <img src={constanciaHImg} alt="Constancia Hackatón" />
+                <p className="titulo-reconocimiento">
+                  Constancia de participación en el Hackatón 2025.
+                </p>
+              </div>
+            </div>
+
+            {/* Soconusco */}
+            <div className="fila-reconocimientos">
+              <div className="imagen-reconocimiento">
+                <img src={soconuscoImag} alt="Soconusco" />
+                <p className="titulo-reconocimiento">
+                  Participación en el <strong>Desafío Emprendedor 2025</strong>.
+                </p>
+              </div>
+
+              <div className="imagen-reconocimiento">
+                <img
+                  src={constanciaSoconuscoImg}
+                  alt="Constancia Soconusco"
+                />
+                <p className="titulo-reconocimiento">
+                  Constancia de participación en Soconusco.
+                </p>
+              </div>
+            </div>
+
+            {/* Conocimiento */}
+            <div className="fila-reconocimientos">
+              <div className="imagen-reconocimiento">
+                <img
+                  src={maquinaExpendedoraImg}
+                  alt="Maratón de Conocimiento"
+                />
+                <p className="titulo-reconocimiento">
+                  Ganador junto a mi compañero del
+                  <strong> Maratón de Conocimiento de Computación</strong>,
+                  29 de agosto de 2024.
+                </p>
+              </div>
+
+              <div className="imagen-reconocimiento">
+                <img
+                  src={constanciaConocimientoiImg}
+                  alt="Máquina Expendedora"
+                />
+                <p className="titulo-reconocimiento">
+                  Proyecto de Máquina Expendedora desarrollado durante la
+                  formación.
+                </p>
+              </div>
             </div>
           </div>
         </div>

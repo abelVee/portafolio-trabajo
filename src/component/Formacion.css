@@ -99,7 +99,18 @@
 .descripcion-formacion {
   color: #475569;
   line-height: 1.6;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
+}
+
+/* Idioma */
+.idioma {
+  margin-top: 10px;
+  color: #334155;
+  font-size: 0.95rem;
+  background-color: #e0f2fe;
+  padding: 8px 12px;
+  border-radius: 8px;
+  display: inline-block;
 }
 
 /* Evidencia */
@@ -109,28 +120,23 @@
   gap: 20px;
 }
 
-/* PDF */
-.btn-pdf {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  background-color: #ef4444;
-  color: white;
-  padding: 10px 18px;
-  border-radius: 10px;
-  text-decoration: none;
-  font-weight: 600;
-  width: fit-content;
+/* Filas de reconocimientos */
+.fila-reconocimientos {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.btn-pdf:hover {
-  background-color: #dc2626;
+.fila-reconocimientos .imagen-reconocimiento {
+  flex: 1 1 300px;
+  max-width: 350px;
+  text-align: center;
 }
 
 /* Imagen */
 .imagen-reconocimiento img {
   width: 100%;
-  max-width: 350px;
   border-radius: 12px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }

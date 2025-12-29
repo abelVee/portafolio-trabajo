@@ -37,7 +37,7 @@ const proyectos = [
     youtube: "https://youtube.com/shorts/6rR-y1w7mhI?si=2HbfxZCDfLnoBu-Q",
   },
   {
-    titulo: "Expendedora de útiles escolares",
+    titulo: "Maquina expendedora de útiles escolares",
     descripcion:
       "Se creo una máquina expendedora de útiles escolares desarrollada en equipo para la Semana de la Ciencia. Combina hardware y software: la interfaz en Java permite la interacción con el usuario y la computadora, mientras que el Arduino controla los movimientos de la máquina mediante programación en C, creando un sistema autómata totalmente funcional.",
     tecnologias: ["Java", "Arduino", "C"],
