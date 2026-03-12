@@ -6,6 +6,7 @@ import portafolioImg from "../assets/Portafolio.png";
 import ecotapImg from "../assets/Ecotap.png";
 import maquinaExpendedoraImg from "../assets/MaquinaExpendora.jpg";
 
+
 import { FaGithub, FaYoutube } from "react-icons/fa";
 
 const proyectos = [

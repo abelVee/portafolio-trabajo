@@ -33,14 +33,14 @@ const Formacion = () => {
         <div className="tarjeta-formacion">
           <div className="fecha">
             <FaCalendarAlt />
-            <span>Presente · 2021</span>
+            <span>Presente · 2022</span>
           </div>
 
           <h5 className="carrera">Ingeniería en Sistemas Computacionales</h5>
 
           <p className="universidad">Universidad Tecnológica</p>
 
-          <p className="semestre">7° semestre</p>
+          <p className="semestre">8° semestre</p>
 
           <p className="descripcion-formacion">
             Formación enfocada en desarrollo de software, bases de datos,
